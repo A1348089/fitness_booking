@@ -33,6 +33,11 @@ celery -A fitness_booking worker --loglevel=info
 # In another (for periodic reminder tasks)
 celery -A fitness_booking beat --loglevel=info
 
+<<<<<<< HEAD
+=======
+## Celery beat setup
+Login to 
+>>>>>>> 3eb1ca2 (commit)
 ##  API Endpoints
 1. **List All Classes:**
 Gets all the classes
