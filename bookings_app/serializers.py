@@ -35,7 +35,7 @@ class BookingSerializer(serializers.ModelSerializer):
 
         current_time = timezone.now()
         if fitness_class.datetime - current_time < timedelta(minutes=10):
-            raise serializers.ValidationError("Bookings must be made at least 10 minutes before the class starts.")
+            raise serializers.ValidationError("Bookings must be made at least 5 minutes before the class starts.")
 
         if Booking.objects.filter(
             fitness_class=fitness_class,
